@@ -1,38 +1,80 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  /* border: 1px solid red; */
+}
+
+nav {
+  background-color: #003049;
+  color: rgb(255, 255, 255);
+  padding: 15px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Container {
+  background-color:#e1d1c1 ;
+  width: 70%;
+  margin: auto;
+  min-height: fit-content;
+  padding: 4vmax;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Container > form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.Container > h1 {
+  margin: 10px;
+  text-align: center;
+}
+input,
+textarea,
+button {
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  outline: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-size: 2.5vmax;
+}
+button {
+  border: none;
+  cursor: pointer;
+  background-color: rgba(37, 30, 37, 0.832);
   color: white;
+  font-weight: 700;
+  font-size: 2.5vmax;
+}
+.task {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 9px 20px;
+  border-radius: 20px;
+  margin: 15px;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.task > div {
+  width: 100%;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task span{
+  color: rgba(0, 0, 0, 0.9);
+  /* font-weight: 500; */
+}
+.task button {
+  width: 40px;
+  height: 40px;
+  font-size: 1.5vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(68, 68, 82, 0.95);
+}
+.task button:hover {
+  border-radius: 100%;
+  background-color: rgba(158, 0, 0, 0.9);
 }
